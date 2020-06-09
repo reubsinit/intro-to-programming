@@ -1,0 +1,37 @@
+// Panel Version: 1
+
+// Panel data:
+x: 600
+y: 0
+w: 200
+h: 600
+d: false
+v: true
+//b: FileDialog_Background.png
+//a: FileDialog_Active.png
+//i: FileDialog_Inactive.png
+
+// Region data
+// Format: r: x, y, w, h, kind
+r:  10, 10, 180, 20, Label, NumbersLabel, NumberLabelFont, l, Numbers
+r: 5, 570, 90, 20, Button, SortButton
+r: 5, 570, 90, 20, Label, SortButtonLabel, NumberLabelFont, c, Sort!
+r: 100, 570, 90, 20, Button, Random
+r: 100, 570, 90, 20, Label, RandomLabel, NumberLabelFont, c, Random!
+
+// Lists are loaded as a region with the following format:
+// r: x, y, w, h, List, ListID, Columns, Rows, ActiveItem, fontID, alignment, scrollSize, scrollKind, scrollBmp
+// x, y, w, h = area of region
+// List       = the identifier for lists
+// listId     = the list's name
+// columns    = the columns in the list
+// rows       = the rows in the list
+//              Note: The area for the list items is calculated from the region's area the rows/cols and scrollSize
+// ActiveItem = the item active at start (-1 for none)
+// fontId     = the name of the font to use for this list's items
+// alignment  = The list font alignment
+// scrollSize = the size (width and height) of the scroll bar
+// scrollKind = v for vertical or h for horizontal
+// scrollBmp  = n for no bitmap, or the bitmap name
+
+r: 10, 40, 180, 520, List, NumbersList, 1, 25, -1, NumberLabelFont, c, 10, v, n
